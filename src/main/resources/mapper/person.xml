@@ -5,14 +5,20 @@
     <select id="getPerson" resultType="entity.Person">
           select * from person
     </select>
+    
+    <select id="getPersonByUsername" parameterType="String" resultType="entity.Person">
+          select * from person where username=#{username}
+    </select>
 
     <delete id="deletePerson" parameterType="String">
-          delete from person while username=#{username}
+          delete from person where username=#{username}
     </delete>
     
     <insert id="addPerson" parameterType="entity.Person">
           insert into person(username,name,age,password,slogan)values(#{username},#{name},#{age},#{password},#{slogan})
     </insert>
     
-    
+    <insert id="updatePerson" parameterType="entity.Person">
+           update person set slogan=#{slogan} where username=#{username}
+    </insert>
 </mapper>

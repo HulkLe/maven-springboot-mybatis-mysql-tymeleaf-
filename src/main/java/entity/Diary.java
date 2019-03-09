@@ -1,15 +1,14 @@
 package entity;
 
-import java.util.Date;
+import org.springframework.stereotype.Component;
 
-import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration;
-
+@Component
 public class Diary {
 	
 	int id;
 	String username;
-	String diary;
-	Date datetime;
+	String content;
+    String datetime;
 	public int getId() {
 		return id;
 	}
@@ -22,21 +21,22 @@ public class Diary {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	public String getDiary() {
-		return diary;
+	public String getContent() {
+		return content;
 	}
-	public void setDiary(String diary) {
-		this.diary = diary;
+	public void setContent(String content) {
+		this.content = content;
 	}
-	public Date getDatetime() {
+	public String getDatetime() {
 		return datetime;
 	}
-	public void setDatetime(Date datetime) {
+	public void setDatetime(String datetime) {
 		this.datetime = datetime;
 	}
 	@Override
 	public String toString() {
-		return "Diary [id=" + id + ", username=" + username + ", diary=" + diary + ", datetime=" + datetime + "]";
+		return "Diary [id=" + id + ", username=" + username + ", content=" + content + ", datetime=" + datetime + "]";
 	}
-
+	
 }
+	

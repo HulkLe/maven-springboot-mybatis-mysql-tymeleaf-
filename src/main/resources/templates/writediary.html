@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+   
+    <p th:text="${person.username}"></p>
+ 
+    <form th:action="@{/addDiary}" th:method="post" >
+          <input type="text" name="content" >
+          <input type="submit"  value="提交" />
+    </form>
+
+</body>
+</html>
