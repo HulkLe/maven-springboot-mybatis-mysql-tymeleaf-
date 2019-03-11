@@ -28,9 +28,15 @@ public class GetController {
 	}
 	
 	@RequestMapping(value="/mypage",method=RequestMethod.GET)
-	public String mypage(Model model)
+	public String mypage()
 	{
 		 return "mypage";
+	}
+	
+	@RequestMapping(value="/sign",method=RequestMethod.GET)
+	public String getsign()
+	{
+		 return "sign";
 	}
 	
 	@RequestMapping(value="/writeDiary",method=RequestMethod.GET)
@@ -75,5 +81,7 @@ public class GetController {
         model.addAttribute("person",request.getSession().getAttribute("person"));
         return "mypage";
 	}
+	
+	
 	
 }

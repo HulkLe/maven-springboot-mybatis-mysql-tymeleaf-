@@ -16,6 +16,7 @@
     <p th:text="${person.slogan}"> </p>
     
     <ul th:each="diary: ${diarylist}">
+        <li  th:text="${diary.username}" ></li>
 		<li  th:text="${diary.content}" ></li>
 		<li  th:text="${diary.datetime}"></li>
 	</ul>
