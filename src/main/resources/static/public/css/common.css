@@ -1,0 +1,71 @@
+body {
+		background-size: cover;
+		background-color: #eee;
+		background-repeat: no-repeat;
+		font-family: 'Kirang Haerang';
+		font-size: 1.5rem;
+		margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+	}
+canvas {
+  background: linear-gradient(
+    to bottom,
+    rgb(6,9,43) 0%,
+    rgb(30,45,75) 100%
+  );
+}
+canvas, menu {
+  position: absolute;
+  top: 0;
+  color: white;
+}
+input, button {
+  color: #fff;
+  font-size: 30px;
+  background: transparent;
+  border: 3px solid gray;
+  padding: 5px;
+  margin-top: 5px;
+  transition: all 500ms;
+}
+textarea {
+	height: 3rem;
+	width: 90%;
+}
+button.active {
+  color: aqua;
+  border-color: aqua;
+  box-shadow: 0 0 4px aqua;
+  text-shadow: 0 0 14px aqua;
+  transition: all 500ms;
+}
+
+label {
+  display: inline-block;
+  color: gray;
+  padding: 10px;
+}
+	input {
+		font-family: 'Kirang Haerang';
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+	h4 {
+		text-align: center;
+		font-weight: normal;
+	}
+	menu {
+		width: 28%;
+		height: 500px;
+		border: 5px solid;
+		border-image: -webkit-linear-gradient( red, blue) 30 30;
+		border-image: -moz-linear-gradient( red, blue) 30 30;
+		border-image: linear-gradient( red, blue) 30 30;
+		margin: 0 auto;
+		margin-top:1rem;
+		padding-left: 1rem;
+	}
+	canvas {
+  display: block;
+}

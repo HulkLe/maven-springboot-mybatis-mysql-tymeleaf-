@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<!-- 屏幕适配方案 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>writeslogan</title>
+
+<!-- 引入google字体库 -->
+<link href="https://fonts.font.im/css?family=Hanalei+Fill|Kirang+Haerang|Lato|Oswald" rel="stylesheet">
+<!-- 引入公共css文件 -->
+<link rel="stylesheet" type="text/css" href="./public/css/common.css">
+
 </head>
+
 <body>
 
+<canvas></canvas>
+<menu>
       <form th:action="@{/addSlogan}" th:method="post" >
-          <input type="text" name="content" >
-          <input type="submit"  value="提交" />
+	    <h4>write slogan</h4>
+	     <input type="text" name="content" >
+ 			<input type="reset" value="reset">
+
+	        <input type="submit" value="submit">
       </form>
+</menu>
+  
+  </div>
+  <script type="text/javascript" src="./public/js/skill.js">
+
+  </script>
 </body>
 </html>

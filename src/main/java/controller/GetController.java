@@ -82,6 +82,4 @@ public class GetController {
         return "mypage";
 	}
 	
-	
-	
 }

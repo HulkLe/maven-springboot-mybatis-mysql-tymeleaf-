@@ -1,29 +1,40 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
-
+<html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<!-- 屏幕适配方案 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个人中心</title>
+
+<!-- 引入google字体库 -->
+<link href="https://fonts.font.im/css?family=Hanalei+Fill|Kirang+Haerang|Lato|Oswald" rel="stylesheet">
+<!-- 引入公共css文件 -->
+<link rel="stylesheet" type="text/css" href="./public/css/common.css">
+
 </head>
 
-
 <body>
-    
-    welcome to 个人中心
-    
-    <p th:text="${person.username}"> </p>
-       签名：
+
+<canvas></canvas>
+<menu>
+    <a href="/writeDiary">writeDiary</a>
+    <a href="/writeSlogan">writeSlogan</a>
+    <a href="/getmainpage">mainpage</a>
+    <a href="/exit">logout</a>
+     welcome to 个人中心
+   <p th:text="${person.username}"> </p>
+       sign:
     <p th:text="${person.slogan}"> </p>
-    
+        
     <ul th:each="diary: ${diarylist}">
-		<li  th:text="${diary.content}" ></li>
-		<li  th:text="${diary.datetime}"></li>
-	</ul>
-    
-    <a href="/writeDiary">写日记</a>
-    <a href="/writeSlogan">写签名</a>
-    <a href="/getmainpage">主页</a>
-    <a href="/exit">注销</a>
-    
+        <li th:text="${diary.content}" ></li>
+        <li th:text="${diary.datetime}"></li>
+    </ul>
+</menu>
+  
+  </div>
+  <script type="text/javascript" src="./public/js/skill.js">
+
+  </script>
 </body>
 </html>

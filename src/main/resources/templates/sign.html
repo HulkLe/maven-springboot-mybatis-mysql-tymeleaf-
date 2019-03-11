@@ -2,17 +2,36 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<!-- 屏幕适配方案 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>signin</title>
+
+<!-- 引入google字体库 -->
+<link href="https://fonts.font.im/css?family=Hanalei+Fill|Kirang+Haerang|Lato|Oswald" rel="stylesheet">
+<!-- 引入公共css文件 -->
+<link rel="stylesheet" type="text/css" href="./public/css/common.css">
+
 </head>
+
 <body>
-     
-     <form action="/sign" method="post" th:object="${person}">
-              注册</br>
-        username:<input type="text" name="username"/></br>
-        password:<input type="text" name="password"/></br>
-        name:<input type="text" name="name"/></br>
-        age:<input type="text" name="age"/></br>
-                 <input type="submit" value="注册">
-    </form>
+<EMBED src="./public/1.mp3" autostart="true" loop="true" hidden="true"/>
+<canvas></canvas>
+<menu>
+  <form action="/sign" method="post" th:object="${person}">
+	    <h4>blog signup</h4>
+	        username:<input type="text" name="username"/></br>
+	        password:<input type="password" name="password"/></br>
+	        name:<input type="text" name="name"/></br>
+	        age:<input type="text" name="age"/></br>
+	        <input type="reset" value="reset">
+
+	        <input type="submit" value="login">
+	    </form>
+</menu>
+  
+  </div>
+  <script type="text/javascript" src="./public/js/skill.js">
+
+  </script>
 </body>
 </html>
